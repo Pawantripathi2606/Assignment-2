@@ -122,7 +122,7 @@ def show_profile():
     """Logged-in student ka profile show karta hai"""
     global logged_user, logged
     if not logged:
-        print("You need to login first ⚠️")
+        print("You need to login first ")
         return
 
     user = students[logged_user]
@@ -136,7 +136,7 @@ def update_profile():
     """Student apni details update kar sakta hai"""
     global logged_user, logged
     if not logged:
-        print("You need to login first ⚠️")
+        print("You need to login first ")
         return
 
     user = students[logged_user]
@@ -172,7 +172,7 @@ def attempt_quiz():
     """Quiz attempt karne ka main function"""
     global logged_user, logged
     if not logged:
-        print("Login required to attempt quiz ⚠️")
+        print("Login required to attempt quiz ")
         return
 
     # quiz questions file se load karna
